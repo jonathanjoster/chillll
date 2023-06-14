@@ -1,0 +1,23 @@
+<!-- <h1 class="text-center">Chillll#show</h1> -->
+
+<div class="table-responsive white-shadow my-3">
+  <table class="table table-dark">
+    <%= render 'thead' %>
+    <tbody>
+      <tr>
+        <td><%= @movie.title %></td>
+        <td class="table-active"><%= @movie.score %></td>
+        <td><%= @movie.summary %></td>
+        <td><%= @movie.mode %></td>
+        <td><%= l @movie.created_at %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="text-center">
+  <%= link_to 'Edit', edit_movie_path, class: 'btn btn-success' %>
+  <%= link_to 'Delete', movie_path, data: {turbo_method: 'delete', turbo_confirm: 'Are you sure?'}, class: 'btn btn-danger' %>
+  <br>
+  <%= link_to 'Back', movies_path, class: 'btn btn-outline-secondary my-3' %>
+</div>

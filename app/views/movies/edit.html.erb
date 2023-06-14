@@ -1,0 +1,31 @@
+<!-- <h1 class="text-center">Chillll#edit</h1> -->
+
+<!-- <fieldset disabled></fieldset> -->
+
+<%= form_with model: @movie, data: { turbo: false }, class: 'my-3' do |f| %>
+<div class="row g-3 text-center">
+  <div class="col-md-4 form-floating">
+    <%= f.select :type, ['Movie', 'TV Series'], {}, class: 'form-select' %>
+    <%= f.label :type, 'Type', class: 'form-label' %>
+  </div>
+  <div class="col-md-6 form-floating">
+    <%= f.text_field :title, class: 'form-control', placeholder: 'Title' %>
+    <%= f.label :title, 'Title' %>
+  </div>
+  <div class="col-md-2 form-floating">
+    <%= f.text_field :score, class: 'form-control', placeholder: 'Score' %>
+    <%= f.label :score, 'Score' %>
+  </div>
+  <div class="col-md-12 form-floating">
+    <%= f.text_field :summary, class: 'form-control', placeholder: 'Summary' %>
+    <%= f.label :summary, 'Summary' %>
+  </div>
+  <div class="col-12">
+    <%= f.submit 'Update', class: 'btn btn-success' %>
+  </div>
+</div>
+<% end %>
+
+<div class="text-center">
+  <%= link_to 'Back', movie_path(@movie), class: 'btn btn-outline-secondary' %>
+</div>
