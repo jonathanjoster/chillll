@@ -1,5 +1,7 @@
 # Chillll
 
+![](public/demo.png)
+
 Ordinary music database following [ChillBox](https://github.com/jonathanjoster/ChillBox).
 
 ## Setup
