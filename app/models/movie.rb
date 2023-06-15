@@ -16,4 +16,8 @@ class Movie < ApplicationRecord
 	def self.updatable_attributes
 		['mode', 'title', 'score', 'summary']
 	end
+
+  def self.mode_options
+		['Movie', 'TV Series', 'DreamWorks']
+	end
 end
