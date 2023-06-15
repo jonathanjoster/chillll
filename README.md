@@ -1,6 +1,6 @@
 # Chillll
 
-Ordinary music database following [ChillBox](https://github.com/jonathanjoster/ChillBox)
+Ordinary music database following [ChillBox](https://github.com/jonathanjoster/ChillBox).
 
 ## Setup
 ```
@@ -29,3 +29,4 @@ Rails 7.0.5
 - https://picolab.dev/2022/03/23/rails7-turbo/
 - https://rihu-do.hatenablog.com/entry/2020/12/10/144222
 - https://qiita.com/mogulla3/items/2d2053f0e4c13ba3b6dc
+- https://qiita.com/yuforest/items/f52c33ce043f9a6e26ce
