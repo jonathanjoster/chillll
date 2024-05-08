@@ -17,6 +17,6 @@ class Movie < ApplicationRecord
 	end
 
   def self.mode_options
-		['Movie', 'TV Series', 'DreamWorks']
+		['Movie', 'TV Series', 'DreamWorks', 'Book']
 	end
 end

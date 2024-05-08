@@ -30,9 +30,13 @@
     <tbody>
       <% @movies.each do |movie| %>
       <tr onclick='window.location="<%= movie_path(movie) %>"' role="link" style="cursor: pointer;">
-        <td><%= movie.title %></td>
+        <td class=<%= movie.mode == 'Book' ? "text-info" : "" %>>
+          <%= movie.title %>
+        </td>
         <td class="table-active"><%= movie.score %></td>
-        <td><%= movie.summary %></td>
+        <td>
+          <%= movie.summary.nil? ? movie.summary : movie.summary.truncate(30) %>
+        </td>
         <td><%= movie.mode %></td>
         <td><%= l movie.created_at %></td>
       </tr>
