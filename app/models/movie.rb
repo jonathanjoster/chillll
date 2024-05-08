@@ -1,7 +1,6 @@
 class Movie < ApplicationRecord
 	validates :title, presence: true, uniqueness: true, length: {maximum: 20}
 	validates :score, presence: true, numericality: true
-	validates :summary, length: {maximum: 50}
 	
 	def self.import(file)
 		CSV.foreach(file.path, headers: true, encoding: 'BOM|UTF-8') do |row|
